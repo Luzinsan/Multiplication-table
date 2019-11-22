@@ -1,0 +1,21 @@
+#include <iostream>
+
+int main()
+{
+	// Объявляем массив 10x10 
+	const int numRows = 10;
+	const int numCols = 10;
+	int product[numRows][numCols] = { 0 };
+
+	// Создаём таблицу умножения и сразу выводим её
+	for (int row = 1; row < numRows; ++row) {
+		for (int col = 1; col < numCols; ++col) {
+			product[row][col] = row * col;
+			std::cout << product[row][col] << "\t";
+		}
+		std::cout << '\n';
+	}
+	
+
+	return 0;
+}
